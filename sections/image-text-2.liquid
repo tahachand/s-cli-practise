@@ -1,4 +1,43 @@
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+     .flex-block{
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
+        width: 100%;
+        max-width: 1200px;
+     }
+     .sec-image{
+        width: 50%;
+        padding: 0 20px;
+     }
+     .sec-image img{
+        width: 100%;
+     }
+     .text-side{
+        width: 50%;
+     }
+     @media only screen and (max-width: 767px){
+        .flex-block{
+            flex-direction: column;
+            padding: 20px 0;
+        }
+        .sec-image{
+            width: 100%;
+            padding: 10px 0;
+        }
+        .text-side{
+            width: 100%;
+        }
+     }
+
+</style>
 <section>
+    <div class="flex-block">
     <div class="sec-image" >
         <img src="{{ section.settings.sec-image |  img_url: 'master'   }}" alt="">
     </div>
@@ -8,6 +47,7 @@
         <a href="{{ section.settings.btn-url }}">
             <button>Shop now</button>
         </a>
+    </div>
     </div>
 </section>
 
