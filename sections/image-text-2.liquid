@@ -1,0 +1,45 @@
+<section>
+    <div class="sec-image" >
+        <img src="{{ section.settings.sec-image |  img_url: 'master'   }}" alt="">
+    </div>
+    <div class="text-side">
+        <h1>{{ section.settings.sec-title }}</h1>
+        <p>{{ section.settings.sec-text  }}</p>
+        <a href="{{ section.settings.btn-url }}">
+            <button>Shop now</button>
+        </a>
+    </div>
+</section>
+
+{% schema %}
+{
+    "name": "image-text-2",
+    "settings": [
+        {
+            "type": "image_picker",
+            "id": "sec-image",
+            "label": "section image"
+        },
+        {
+            "type": "text",
+            "id": "sec-title",
+            "label": "Section Title"
+        },
+        {
+            "type": "textarea",
+            "id": "sec-text",
+            "label": "section content"
+        },
+        {
+            "type": "url",
+            "id": "btn-url",
+            "label": "Button url"
+        }
+        ],
+        "presets": [
+            {
+                "name": "image-text-2"
+            }
+        ]
+}
+{% endschema %}
