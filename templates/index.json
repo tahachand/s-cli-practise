@@ -75,10 +75,31 @@
           "settings": {
             "product": "low-price-hoodie"
           }
+        },
+        "product_ELLkXM": {
+          "type": "product",
+          "settings": {
+            "product": "cheap-price"
+          }
+        },
+        "product_wKRxYL": {
+          "type": "product",
+          "settings": {
+            "product": "half-sleeve-t-shirt"
+          }
+        },
+        "product_cMNcqd": {
+          "type": "product",
+          "settings": {
+            "product": "premium-quality-jackets"
+          }
         }
       },
       "block_order": [
-        "product_XfPimL"
+        "product_XfPimL",
+        "product_ELLkXM",
+        "product_wKRxYL",
+        "product_cMNcqd"
       ],
       "settings": {
         "sec-title": "Section Title"
