@@ -41,20 +41,23 @@
 
 </style>
 <section>
-    <div class="flex-block">
-    <div class="sec-image" >
-        <img src="{{ section.settings.sec-image |  img_url: 'master'   }}" alt="">
-    </div>
-    <div class="text-side">
-        <h1>{{ section.settings.sec-title }}</h1>
-        <p>{{ section.settings.sec-text  }}</p>
-        <p>hello</p>
-        <p>hlo new chaning for main branch</p>
-        <a href="{{ section.settings.btn-url }}">
-            <button>Shop now</button>
-        </a>
-        <p>Lorem ipsum dolor sit amet.</p>
-    </div>
+    <div class="main-block">
+   <h1>{{ section.settings.sec-title }}</h1>
+     <div class="flex-block">
+        {% for block in section.blocks %}
+            {%  assign product = block.settings.product %} 
+        <div class="box">
+            <div class="box-image">
+            <img src="{{ product.image |  img_url: 'master' }}" alt="">
+            </div>
+            <h5>{{ product.title }}</h5>
+            <p>{{ product.price }}</p>
+            <a href="{{ block.settings.btn-url }}">
+                <button>Buy Now</button>
+            </a>
+        </div>
+        {% endfor %}
+     </div>
     </div>
 </section>
 
@@ -71,17 +74,20 @@
             "type": "text",
             "id": "sec-title",
             "label": "Section Title"
-        },
-        {
-            "type": "textarea",
-            "id": "sec-text",
-            "label": "section content"
-        },
-        {
-            "type": "url",
-            "id": "btn-url",
-            "label": "Button url"
         }
+        ],
+        "blocks":[
+            {
+                "type": "product",
+                "name": "Add Product",
+                "settings":[
+                   {
+                    "type": "product",
+                    "id": "product",
+                    "label": "Add Product"
+                   }
+        ]
+}
         ],
         "presets": [
             {
