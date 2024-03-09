@@ -67,19 +67,27 @@
         "padding_bottom": 36
       }
     },
-    "image_text_2_CNVfBG": {
+    "image_text_2_cBnAfn": {
       "type": "image-text-2",
+      "blocks": {
+        "product_XfPimL": {
+          "type": "product",
+          "settings": {
+            "product": "low-price-hoodie"
+          }
+        }
+      },
+      "block_order": [
+        "product_XfPimL"
+      ],
       "settings": {
-        "sec-image": "shopify:\/\/shop_images\/caucasian-scientist-man-blue-lab-uniform-make-notes-about-big-steel-chromed-machine-look-camera_2_01d32aef-ea42-466d-b5e0-e48028a16454.png",
-        "sec-title": "Section Title",
-        "sec-text": "lorem ispum dolor lorem ispum dolor",
-        "btn-url": "shopify:\/\/blogs\/news"
+        "sec-title": "Section Title"
       }
     }
   },
   "order": [
     "image_banner",
     "featured_collection",
-    "image_text_2_CNVfBG"
+    "image_text_2_cBnAfn"
   ]
 }
