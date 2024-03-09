@@ -67,28 +67,28 @@
         "padding_bottom": 36
       }
     },
-    "image_text_2_cBnAfn": {
+    "image_text_2_T9DXe4": {
       "type": "image-text-2",
       "blocks": {
-        "product_XfPimL": {
-          "type": "product",
-          "settings": {
-            "product": "low-price-hoodie"
-          }
-        },
-        "product_ELLkXM": {
+        "product_TAH6Gx": {
           "type": "product",
           "settings": {
             "product": "cheap-price"
           }
         },
-        "product_wKRxYL": {
+        "product_iEGfyE": {
           "type": "product",
           "settings": {
             "product": "half-sleeve-t-shirt"
           }
         },
-        "product_cMNcqd": {
+        "product_rqN4Bt": {
+          "type": "product",
+          "settings": {
+            "product": "gaffer-premium-hoodie"
+          }
+        },
+        "product_8fj4Va": {
           "type": "product",
           "settings": {
             "product": "premium-quality-jackets"
@@ -96,19 +96,19 @@
         }
       },
       "block_order": [
-        "product_XfPimL",
-        "product_ELLkXM",
-        "product_wKRxYL",
-        "product_cMNcqd"
+        "product_TAH6Gx",
+        "product_iEGfyE",
+        "product_rqN4Bt",
+        "product_8fj4Va"
       ],
       "settings": {
-        "sec-title": "Section Title"
+        "sec-title": "Product Main"
       }
     }
   },
   "order": [
     "image_banner",
     "featured_collection",
-    "image_text_2_cBnAfn"
+    "image_text_2_T9DXe4"
   ]
 }
