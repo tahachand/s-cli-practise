@@ -6,6 +6,7 @@
     }
     .main-block h1{
         text-align: center;
+        padding: 10px 0;
     }
      .flex-block{
         display: flex;
@@ -17,7 +18,7 @@
      .box{
         width: 100%;
         max-width: 300px;
-        margin: 0 20px;
+        gap: 30px;
         border: 1px solid black;
         padding: 10px 10px;
         text-align: center;
@@ -28,6 +29,10 @@
      .box-image img{
         width: 100%;
         object-fit: cover;
+     }
+     .box button{
+        width: 100%;
+        padding: 10px 0;
      }
 
      @media only screen and (max-width: 767px){
@@ -52,7 +57,7 @@
             <img src="{{ product.featured_image |  img_url: 'master' }}" alt="">
             </div>
             <h5>{{ product.title }}</h5>
-            <p>{{ product.price }}</p>
+            <p>{{ product.price |  money }}</p>
             <a href="{{ block.settings.btn-url }}">
                 <button>View Product</button>
             </a>
