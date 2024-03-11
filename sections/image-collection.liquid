@@ -66,7 +66,7 @@
         width: 50%;
         padding: 0 20px;
     }
-    .collection-box img{
+    .coll-img{
         width: 100%;
         position: relative;
     }
@@ -74,7 +74,8 @@
         position: absolute;
         left: 50%;
         bottom: 0;
-        display: none;
+        transform: translateX(-50%);
+        /* display: none; */
     }
     .collection-box:hover .collection-box a{
         display: block;
@@ -96,7 +97,7 @@
             {% assign collection = section.settings.featured_collection %}
             {% for product in collection.products limit:4 %}
                 <div class="collection-box">
-                <img src="{{ product.featured_image |  img_url: 'master' }}" alt="loading image">
+                <img class="coll-img"  src="{{ product.featured_image |  img_url: 'master' }}" alt="loading image">
              <a href="{{ section.settings.collec-url }}">  <button>ADD TO CART</button> </a> 
                 <h3>{{ product.title }}</h3>
                 <p>{{ product.price |  money }}</p>
