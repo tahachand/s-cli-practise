@@ -55,7 +55,7 @@
     <div class="sec-main">
         <h1>{{ section.settings.sec-title }}</h1>
         <div class="main-flex-2">
-            {% for block in section.blocks %}
+            {% for block in section.blocks limit:3 %}
             <div class="flex-box-2">
                  <div class="box-image-2">
                     <img class="box-img-2" src="{{ block.settings.box-image |  img_url: 'master' }}" alt="">
