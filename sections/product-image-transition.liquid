@@ -1,0 +1,90 @@
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .sec-main{
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px 0;
+    }
+    .main-flex-2{
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
+        width: 100%;
+    }
+    .flex-box-2{
+        width: 30%;
+    }
+    .box-image-2{
+        width: 100%;
+    }
+    .box-img-2{
+        width: 100%;
+    }
+    .flex-box-2:hover .box-img-2{
+        transform: scale(1.7);
+        border-radius: 50%;
+    }
+</style>
+<section>
+    <div class="sec-main">
+        <h1>{{ section.settings.sec-title }}</h1>
+        <div class="main-flex-2">
+            {% for block in section.blocks %}
+            <div class="flex-box-2">
+                 <div class="box-image-2">
+                    <img class="box-img-2" src="{{ block.settings.box-image |  img_url: 'master' }}" alt="">
+                 </div>
+                 <div class="box-detail-2">
+                    <h2>{{ block.settings.image-title }}</h2>
+                    <p>{{ block.settings.image-detail }}</p>
+                 </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+{% schema %}
+{
+    "name": "Image Transition",
+    "settings": [
+        {
+            "type": "text",
+            "id": "sec-title",
+            "label": "Section Title"
+        }
+        ],
+        "blocks": [
+            {
+                "type": "text",
+                "name": "Add block",
+                "settings": [
+                    {
+                        "type": "image_picker",
+                        "id": "box-image",
+                        "label": "Box image"
+                    },
+                    {
+                        "type": "text",
+                        "id": "image-title",
+                        "label": "Image Title"
+                    },
+                    {
+                        "type": "textarea",
+                        "id": "image-detail",
+                        "label": "Image Detail"
+                    }
+                ]
+            }
+        ],
+        "presets": [
+            {
+                "name": "Image Transition"
+            }
+        ]
+}
+{% endschema %}
