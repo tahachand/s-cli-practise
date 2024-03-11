@@ -45,7 +45,18 @@
         padding: 10px 30px;
         border: none;
     }
-    .collection-block img{
+    .collection-block{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin: 0 auto;
+        flex-wrap: wrap;
+    }
+    .box{
+        width: 50%;
+    }
+    .box img{
         width: 100%;
         max-width: 200px;
     }
@@ -65,10 +76,11 @@
         <div class="collection-block">
             {% assign collection = section.settings.featured_collection %}
             {% for product in collection.products limit:4 %}
+                <div class="box">
                 <img src="{{ product.featured_image |  img_url: 'master' }}" alt="loading image">
                 <h3>{{ product.title }}</h3>
                 <p>{{ product.price |  money }}</p>
-        
+                </div>
                 {% endfor %}
         </div>
     </div>
