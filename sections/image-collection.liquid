@@ -140,7 +140,7 @@
             {% for product in collection.products limit:4 %}
                 <div class="collection-box">
                 <img class="coll-img"  src="{{ product.featured_image |  img_url: 'master' }}" alt="loading image">
-              <form method="post" action="addToCart.php" class="cart-btn">
+              <form method="post" action="/cart/add" class="cart-btn">
                 <button type="submit" >Add to cart</button>
              </form>  
                 <h3>{{ product.title }}</h3>
