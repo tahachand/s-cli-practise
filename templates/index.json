@@ -113,7 +113,27 @@
         "box-title": "A Gift You Can Give Anytime",
         "box-text": "Looking for the perfect last-minute gift? Share the joy of green with a gift card sent directly to your loved one’s email.",
         "sec-url": "",
-        "featured_collection": "shirts-collection"
+        "featured_collection": "shirts-collection",
+        "collec-url": ""
+      }
+    },
+    "product_image_transition_W4XKwf": {
+      "type": "product-image-transition",
+      "blocks": {
+        "text_bq4hDx": {
+          "type": "text",
+          "settings": {
+            "box-image": "shopify:\/\/shop_images\/quality_furniture_-_4.webp",
+            "image-title": "What's Your Design Aesthetic",
+            "image-detail": "Despite having state of the art furniture, beautiful curtains, royal marble countertops or flooring and whatnot, does your house not feel like home?"
+          }
+        }
+      },
+      "block_order": [
+        "text_bq4hDx"
+      ],
+      "settings": {
+        "sec-title": ""
       }
     }
   },
@@ -121,6 +141,7 @@
     "image_banner",
     "featured_collection",
     "image_text_2_T9DXe4",
-    "image_collection_XT4cn8"
+    "image_collection_XT4cn8",
+    "product_image_transition_W4XKwf"
   ]
 }
