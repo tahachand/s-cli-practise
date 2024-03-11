@@ -83,6 +83,18 @@
     .collection-box:hover{
         background-color: #516a6a;
      } 
+
+     @media only screen and (max-width: 767px){
+        .image-collection{
+            flex-direction: column;
+        }
+        .image-block{
+            width: 100%;
+        }
+        .collection-block{
+            width: 100%;
+        }
+     }
 </style>
 <section>
     <h1 class="collection-title" >{{ section.settings.main-title }}</h1>
