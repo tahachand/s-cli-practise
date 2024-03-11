@@ -1,3 +1,40 @@
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .image-collection{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+    .image-block{
+        width: 50%;
+        position: relative;
+    }
+    .image-block img{
+        width: 100%;
+    }
+    .text-box{
+        width: 100%;
+        max-width: 400px;
+        background-color: #d3cabf;
+    }
+    .text-box h5{
+        color: #2c2a25;
+    }
+    .text-box p{
+        color: #6d4f59;
+    }
+    .text-box a button{
+        color: #516a6a;
+        background-color: white;
+        padding: 10px 30px;
+    }
+</style>
 <section>
     <h1>{{ section.settings.main-title }}</h1>
     <div class="image-collection">
@@ -12,7 +49,8 @@
         </div>
         <div class="collection-block">
             {% assign collection = section.settings.featured_collection %}
-            {% for product in collection.products %}
+            {% for product in collection.products limit:4 %}
+
                 {% endfor %}
         </div>
     </div>
