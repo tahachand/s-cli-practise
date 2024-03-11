@@ -2,7 +2,7 @@
     <h1>{{ section.settings.main-title }}</h1>
     <div class="image-collection">
         <div class="image-block">
-            <img src="{{ section.settings.sec-image }}" alt="loading image">
+            <img src="{{ section.settings.sec-image |  img_url: 'master' }}" alt="loading image">
             <div class="text-box">
                  <h5>{{ section.settings.box-title }}</h5>
                  <p>{{ section.settings.box-text }}</p>
