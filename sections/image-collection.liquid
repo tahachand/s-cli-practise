@@ -140,7 +140,9 @@
             {% for product in collection.products limit:4 %}
                 <div class="collection-box">
                 <img class="coll-img"  src="{{ product.featured_image |  img_url: 'master' }}" alt="loading image">
-             <a class="cart-btn" href="{{ section.settings.collec-url }}">  <button>ADD TO CART</button> </a>  
+              <form method="post" action="/cart/add" class="cart-btn">
+                <button type="submit" >Add to cart</button>
+             </form>  
                 <h3>{{ product.title }}</h3>
                 <p>{{ product.price |  money }}</p>
                 </div>
