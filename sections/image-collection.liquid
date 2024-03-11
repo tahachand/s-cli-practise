@@ -4,6 +4,10 @@
         padding: 0;
         box-sizing: border-box;
     }
+    .collection-title{
+        text-align: center;
+        padding: 20px 0 10px 0;
+    }
     .image-collection{
         display: flex;
         justify-content: center;
@@ -77,7 +81,7 @@
     }
 </style>
 <section>
-    <h1>{{ section.settings.main-title }}</h1>
+    <h1 class="collection-title" >{{ section.settings.main-title }}</h1>
     <div class="image-collection">
         <div class="image-block">
             <img src="{{ section.settings.sec-image |  img_url: 'master' }}" alt="loading image">
