@@ -127,10 +127,28 @@
             "image-title": "What's Your Design Aesthetic",
             "image-detail": "Despite having state of the art furniture, beautiful curtains, royal marble countertops or flooring and whatnot, does your house not feel like home?"
           }
+        },
+        "text_jm467n": {
+          "type": "text",
+          "settings": {
+            "box-image": "shopify:\/\/shop_images\/Furniture_Care-1.webp",
+            "image-title": "The Clean Up: Simplify Cleaning and Save Your Time",
+            "image-detail": "Are you one that is always itching for that spic and span clean feeling?"
+          }
+        },
+        "text_MjET8m": {
+          "type": "text",
+          "settings": {
+            "box-image": "shopify:\/\/shop_images\/Vintage_Or_Modern_-_3.webp",
+            "image-title": "Our Homes - An Extension of Our Expression",
+            "image-detail": "Do you ever stop to think about how we use interior design to express ourselves?"
+          }
         }
       },
       "block_order": [
-        "text_bq4hDx"
+        "text_bq4hDx",
+        "text_jm467n",
+        "text_MjET8m"
       ],
       "settings": {
         "sec-title": ""
