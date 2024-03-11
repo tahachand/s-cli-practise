@@ -109,7 +109,10 @@
       "type": "image-collection",
       "settings": {
         "main-title": "Section Title",
-        "sec-image": "shopify:\/\/shop_images\/freestocks-_3Q3tsJ01nc-unsplash.jpg"
+        "sec-image": "shopify:\/\/shop_images\/freestocks-_3Q3tsJ01nc-unsplash.jpg",
+        "box-title": "Lorem ispum dolor",
+        "box-text": "lorem ispum dolor lorem ispum dolro dolor dolor dolor dolor dolor dolor dolor lorem lorem lorem lorem lorem lorem lorem lorem",
+        "sec-url": ""
       }
     }
   },
