@@ -75,23 +75,23 @@
     .coll-img{
         width: 100%;
     }
-    .collection-box a{
+    .cart-btn{
         position: absolute;
         left: 50%;
         bottom: 75px;
         transform: translateX(-50%);
-        /* display: none; */
+        display: none;
     }
-    .collection-box a button{
+    .cart-btn button{
         padding: 10px 15px;
         border: none;
         background-color: #819393;
         color: white;
     }
-    .collection-box a button:hover{
+    .cart-btn button:hover{
         background-color: #516a6a;
     }
-    .collection-box:hover .collection-box a{
+    .collection-box:hover .cart-btn{
         display: block;
     }
     /* .collection-box:hover{
@@ -112,7 +112,7 @@
         .text-box{
             position: initial;
         }
-        .collection-box a button{
+        .cart-btn button{
             width: 100%;
         }
      }
@@ -134,7 +134,7 @@
             {% for product in collection.products limit:4 %}
                 <div class="collection-box">
                 <img class="coll-img"  src="{{ product.featured_image |  img_url: 'master' }}" alt="loading image">
-             <a href="{{ section.settings.collec-url }}">  <button>ADD TO CART</button> </a> 
+             <a class="cart-btn" href="{{ section.settings.collec-url }}">  <button>ADD TO CART</button> </a>  
                 <h3>{{ product.title }}</h3>
                 <p>{{ product.price |  money }}</p>
                 </div>
