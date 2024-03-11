@@ -104,11 +104,19 @@
       "settings": {
         "sec-title": "Product Main"
       }
+    },
+    "image_collection_XT4cn8": {
+      "type": "image-collection",
+      "settings": {
+        "main-title": "Section Title",
+        "sec-image": "shopify:\/\/shop_images\/freestocks-_3Q3tsJ01nc-unsplash.jpg"
+      }
     }
   },
   "order": [
     "image_banner",
     "featured_collection",
-    "image_text_2_T9DXe4"
+    "image_text_2_T9DXe4",
+    "image_collection_XT4cn8"
   ]
 }
