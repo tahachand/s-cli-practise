@@ -1,0 +1,38 @@
+<section>
+    <h1>{{ section.settings.main-title }}</h1>
+    <div class="image-collection">
+        <div class="image-block">
+            <img src="{{ section.settings.sec-image }}" alt="loading image">
+            <div class="text-box">
+                 <h5>{{ section.settings.box-title }}</h5>
+                 <p>{{ section.settings.box-text }}</p>
+                 <button>SHOP GIFT CARDS</button>
+            </div>
+        </div>
+        <div class="collection-block">
+            {% assign collection = section.settings.featured_collection %}
+        </div>
+    </div>
+</section>
+{% schema %}
+{
+    "name": "image-collection",
+    "settings": [
+        {
+            "type": "text",
+            "id": "main-title",
+            "label": "Section Title"
+        },
+        {
+            "type": "image_picker",
+            "id": "sec-image",
+            "label": "Section Image"
+        }
+        ],
+        "presets": [
+            {
+                "name": "image-collection"
+            }
+        ]
+}
+{% endschema %}
