@@ -83,6 +83,7 @@
             {% for product in collection.products limit:4 %}
                 <div class="collection-box">
                 <img src="{{ product.featured_image |  img_url: 'master' }}" alt="loading image">
+             <a href="{{ section.settings.collec-url }}">  <button>ADD TO CART</button> </a> 
                 <h3>{{ product.title }}</h3>
                 <p>{{ product.price |  money }}</p>
                 </div>
@@ -123,6 +124,11 @@
             "type": "collection",
             "id": "featured_collection",
             "label": "Add Collection"
+        },
+        {
+            "type": "url",
+            "id": "collec-url",
+            "label": "Collection Button URL"
         }
         ],
         "presets": [
