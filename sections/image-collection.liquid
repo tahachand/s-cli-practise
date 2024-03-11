@@ -23,6 +23,9 @@
         max-width: 400px;
         background-color: #d3cabf;
         padding: 20px 40px;
+        position: absolute;
+        left: 0;
+        bottom: 0;
     }
     .text-box h5{
         color: #2c2a25;
@@ -58,7 +61,10 @@
         <div class="collection-block">
             {% assign collection = section.settings.featured_collection %}
             {% for product in collection.products limit:4 %}
-
+                <img src="{{ product.image |  img_url: 'master' }}" alt="loading image">
+                <h3>{{ product.title }}</h3>
+                <p>{{ product.price |  money }}</p>
+        
                 {% endfor %}
         </div>
     </div>
