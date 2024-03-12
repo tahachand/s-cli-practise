@@ -52,8 +52,13 @@
   let currentIndex = 0;
 
   function goToSlide(index) {
-    slides.style.transform = `translateX(-${index * slideWidth}px)`;
     currentIndex = index;
+    let offset = -index * slideWidth;
+    if (currentIndex === dots.length) {
+      offset = 0;
+      currentIndex = 0;
+    }
+    slides.style.transform = `translateX(${offset}px)`;
     updateDots();
   }
 
@@ -74,6 +79,7 @@
   //   goToSlide(currentIndex);
   // }, 3000);
 </script>
+
 
 {% schema %}
 {
