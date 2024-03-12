@@ -1,14 +1,14 @@
 <style>
-    *{
+    #shopify-section-{{ section.id }} *{
         margin: 0;
         padding: 0;
         box-sizing: border-box;
     }
-    .collection-title{
+    #shopify-section-{{ section.id }} .collection-title{
         text-align: center;
         padding: 20px 0 10px 0;
     }
-    .image-collection{
+    #shopify-section-{{ section.id }} .image-collection{
         display: flex;
         justify-content: center;
         width: 100%;
@@ -16,17 +16,17 @@
         margin: 0 auto;
         padding: 30px 0;
     }
-    .image-block{
+    #shopify-section-{{ section.id }} .image-block{
         width: 50%;
         height: auto;
         position: relative;
     }
-    .image-block img{
+    #shopify-section-{{ section.id }} .image-block img{
         width: 100%;
         height: 100%;
         object-fit: cover;
     }
-    .text-box{
+    #shopify-section-{{ section.id }} .text-box{
         width: 100%;
         max-width: 400px;
         background-color: #d3cabf;
@@ -35,30 +35,30 @@
         left: 0;
         bottom: 0;
     }
-    .text-box h5{
+    #shopify-section-{{ section.id }} .text-box h5{
         color: #2c2a25;
         padding: 10px 0;
         font-size: 25px;
         font-weight: bold;
     }
-    .text-box p{
+    #shopify-section-{{ section.id }} .text-box p{
         color: #6d4f59;
         padding: 10px 0;
     }
-    .text-box a{
+    #shopify-section-{{ section.id }} .text-box a{
         padding: 10px 0;
     }
-    .text-box a button{
+    #shopify-section-{{ section.id }} .text-box a button{
         color: #516a6a;
         background-color: white;
         padding: 10px 30px;
         border: none;
     }
-    .text-box a button:hover{
+    #shopify-section-{{ section.id }} .text-box a button:hover{
         color: white;
         background-color: #516a6a;
     }
-    .collection-block{
+    #shopify-section-{{ section.id }} .collection-block{
         display: flex;
         justify-content: center;
         align-items: center;
@@ -67,60 +67,57 @@
         margin: 0 auto;
         flex-wrap: wrap;
     }
-    .collection-box{
+    #shopify-section-{{ section.id }} .collection-box{
         width: 50%;
         padding: 0 20px;
         position: relative;
     }
-    .coll-img{
+    #shopify-section-{{ section.id }} .coll-img{
         width: 100%;
     }
-    .cart-btn{
+    #shopify-section-{{ section.id }} .cart-btn{
         position: absolute;
         left: 50%;
         bottom: 110px;
         transform: translateX(-50%);
         display: none;
     }
-    .cart-btn button{
+     #shopify-section-{{ section.id }} .cart-btn button{
         padding: 10px 15px;
         border: none;
         background-color: #819393;
         color: white;
     }
-    .cart-btn button:hover{
+    #shopify-section-{{ section.id }} .cart-btn button:hover{
         background-color: #516a6a;
         cursor: pointer;
     }
-    .collection-box:hover .cart-btn{
+    #shopify-section-{{ section.id }} .collection-box:hover .cart-btn{
         display: block;
     }
-    /* .collection-box:hover{
-        background-color: #516a6a;
-     }  */
-      .collection-box p, h3{
+      #shopify-section-{{ section.id }} .collection-box p, h3{
         padding: 10px 0;
       }
      @media only screen and (max-width: 767px){
-        .image-collection{
+        #shopify-section-{{ section.id }} .image-collection{
             flex-direction: column;
         }
-        .image-block{
+        #shopify-section-{{ section.id }} .image-block{
             width: 100%;
         }
-        .collection-block{
+        #shopify-section-{{ section.id }} .collection-block{
             width: 100%;
             padding: 10px 0;
         }
-        .text-box{
+        #shopify-section-{{ section.id }} .text-box{
             position: initial;
         }
-        a.cart-btn {
+        #shopify-section-{{ section.id }} a.cart-btn {
     width: 100%;
     max-width: 120px;
     bottom: 120px;
 }
-        .cart-btn button{
+        #shopify-section-{{ section.id }} .cart-btn button{
             width: 100%;
         }
      }
