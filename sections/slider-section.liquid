@@ -1,5 +1,13 @@
 
 <style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .slider-main{
+        padding: 40px 0;
+    }
   .slider {
     width: 100%;
     margin: 0 auto;
@@ -50,7 +58,7 @@
     background-color: #717171;
   }
 </style>
-<section>
+<section class="slider-main" >
 <div class="slider">
   <div class="slides">
       {% for block in section.blocks %}
