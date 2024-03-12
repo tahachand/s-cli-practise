@@ -13,6 +13,22 @@
   .slide {
     flex: 0 0 100%;
   }
+  .slide-flex{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 100%;
+  }
+  .slide-image{
+    width: 70%;
+  }
+  .slide-image img{
+    width: 100%;
+    object-fit: cover;
+  }
+  .slide-text{
+    width: 25%;
+  }
   .dot-container {
     text-align: center;
     margin-top: 20px;
@@ -33,9 +49,22 @@
 <section>
 <div class="slider">
   <div class="slides">
-    <div class="slide" style="background-color: #ff9999;">Slide 1</div>
-    <div class="slide" style="background-color: #ff9999;">Slide 1</div>
-    <div class="slide" style="background-color: #ff9999;">Slide 1</div>
+      {% for block in section.blocks %}
+    <div class="slide" style="background-color: #ff9999;">
+    <div class="slide-flex">
+        <div class="slide-image">
+            <img src="{{ block.settings.slide-img |  img_url: 'master' }}" alt="loading image">
+        </div>
+        <div class="slide-text">
+            <h4 class="slide-title">{{ block.settings.slide-title }}</h4>
+            <p>{{ block.settings.slide-detail }}</p>
+            <a href="">
+                <button>Shop Now</button>
+            </a>
+        </div>
+    </div>
+    </div>
+{% endfor %}
     <!-- Add additional slides here -->
   </div>
 </div>
@@ -96,6 +125,29 @@
     "name": "Slider section",
     "settings": [
         
+        ],
+        "blocks": [
+            {
+                "type": "text",
+                "name":"Slides",
+                "settings": [
+                    {
+                        "type": "image_picker",
+                        "id": "slide-img",
+                        "label": "Slide Image"
+                    },
+                    {
+                        "type": "text",
+                        "id": "slide-title",
+                        "label": "Slide Title"
+                    },
+                    {
+                        "type": "textarea",
+                        "id": "slide-detail",
+                        "label": "Slide Detail"
+                    }
+                ]
+            }
         ],
         "presets": [
             {
