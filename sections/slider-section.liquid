@@ -1,0 +1,90 @@
+
+<style>
+  .slider {
+    width: 80%;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+  }
+  .slides {
+    display: flex;
+    transition: transform 0.5s ease;
+  }
+  .slide {
+    flex: 0 0 100%;
+  }
+  .dot-container {
+    text-align: center;
+    margin-top: 20px;
+  }
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 5px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+  }
+  .dot.active {
+    background-color: #717171;
+  }
+</style>
+<section>
+<div class="slider">
+  <div class="slides">
+    <div class="slide" style="background-color: #ff9999;">Slide 1</div>
+    <div class="slide" style="background-color: #99ff99;">Slide 2</div>
+    <div class="slide" style="background-color: #9999ff;">Slide 3</div>
+  </div>
+</div>
+
+<div class="dot-container">
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+</div>
+</section>
+<script>
+  const slides = document.querySelector('.slides');
+  const slideWidth = slides.clientWidth;
+  const dots = document.querySelectorAll('.dot');
+  let currentIndex = 0;
+
+  function goToSlide(index) {
+    slides.style.transform = `translateX(-${index * slideWidth}px)`;
+    currentIndex = index;
+    updateDots();
+  }
+
+  function updateDots() {
+    dots.forEach(dot => dot.classList.remove('active'));
+    dots[currentIndex].classList.add('active');
+  }
+
+  dots.forEach((dot, index) => {
+    dot.addEventListener('click', () => {
+      goToSlide(index);
+    });
+  });
+
+  // Automatic slide change example
+  // setInterval(() => {
+  //   currentIndex = (currentIndex + 1) % dots.length;
+  //   goToSlide(currentIndex);
+  // }, 3000);
+</script>
+
+{% schema %}
+{
+    "name": "Slider section",
+    "settings": [
+        
+        ],
+        "presets": [
+            {
+                "name": "Slider section"
+            }
+        ]
+}
+{% endschema %}
