@@ -153,6 +153,11 @@
       "settings": {
         "sec-title": "Design Inspirations"
       }
+    },
+    "slider_section_LFkbpn": {
+      "type": "slider-section",
+      "settings": {
+      }
     }
   },
   "order": [
@@ -160,6 +165,7 @@
     "featured_collection",
     "image_text_2_T9DXe4",
     "image_collection_XT4cn8",
-    "product_image_transition_W4XKwf"
+    "product_image_transition_W4XKwf",
+    "slider_section_LFkbpn"
   ]
 }
