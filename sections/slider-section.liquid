@@ -49,6 +49,14 @@
   .slide-text-1 p{
     font-size: 17px;
   }
+  .shop-btn{
+    text-decoration: underline;
+  }
+  .shop-btn button{
+    background-color: none;
+    border: none;
+    font-size: 18px;
+  }
   .dot-container {
     text-align: center;
     position: absolute;
@@ -84,7 +92,7 @@
 <div class="slider">
   <div class="slides">
       {% for block in section.blocks %}
-    <div class="slide" style="background-color: #ff9999;">
+    <div class="slide" style="background-color: #f6f6f0;">
     <div class="slide-flex">
         <div class="slide-image">
             <img src="{{ block.settings.slide-img |  img_url: 'master' }}" alt="loading image">
@@ -92,7 +100,7 @@
         <div class="slide-text-1">
             <h4 class="slide-title">{{ block.settings.slide-title }}</h4>
             <p>{{ block.settings.slide-detail }}</p>
-            <a href="">
+            <a class="shop-btn" href="">
                 <button>Shop Now</button>
             </a>
         </div>
