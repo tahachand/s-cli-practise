@@ -164,10 +164,19 @@
             "slide-title": "Furniture for the whole family",
             "slide-detail": "Create an inviting space that the whole family can enjoy with our collection of inspiring family room furniture ideas"
           }
+        },
+        "text_HiDjk6": {
+          "type": "text",
+          "settings": {
+            "slide-img": "shopify:\/\/shop_images\/hb2_1320x600_crop_center_a59c0830-d305-427e-ae43-cb0c1da09f02.webp",
+            "slide-title": "Direct to customer",
+            "slide-detail": "Time and time again I won the applause of the bloodthirsty multitude, and toward the end there were cries."
+          }
         }
       },
       "block_order": [
-        "text_URp348"
+        "text_URp348",
+        "text_HiDjk6"
       ],
       "settings": {
       }
