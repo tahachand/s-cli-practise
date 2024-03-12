@@ -172,11 +172,20 @@
             "slide-title": "Direct to customer",
             "slide-detail": "Time and time again I won the applause of the bloodthirsty multitude, and toward the end there were cries."
           }
+        },
+        "text_gxkxCd": {
+          "type": "text",
+          "settings": {
+            "slide-img": "shopify:\/\/shop_images\/hb4_1320x600_crop_center_b4333a4a-b8f1-4452-a30d-c2a65ea89ab1.webp",
+            "slide-title": "Sit with luxury",
+            "slide-detail": "Sophistication and nobility can be recognised in a person’s home both by the size of your luxury living room and by the design touches and style of the furniture."
+          }
         }
       },
       "block_order": [
         "text_URp348",
-        "text_HiDjk6"
+        "text_HiDjk6",
+        "text_gxkxCd"
       ],
       "settings": {
       }
