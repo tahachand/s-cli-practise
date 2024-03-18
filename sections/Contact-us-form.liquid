@@ -106,25 +106,17 @@
     {% endform %}
   </div>
 </section>
-   <script>
-    document.getElementById('contactForm').addEventListener('submit', function(event) {
-      event.preventDefault(); // Prevent the default form submission
-
-      // Get form data
-      const formData = new FormData(event.target);
-
-      // Convert form data to JSON format
-      const jsonData = {};
-      formData.forEach(function(value, key) {
-        jsonData[key] = value;
-      });
-
-      // Log form data to console
-      console.log(jsonData);
-
-      // You can now send this data to your server using AJAX if needed
-    });
-  </script>
+ <script>
+document.querySelectorAll(".btn button").addEventListener("submit", function() {
+  // Get the form inputs by their IDs
+  var firstName = document.getElementById("name").value;
+  var email = document.getElementById("email").value;
+  
+  // Print the input values to the console
+  console.log("First Name:", firstName);
+  console.log("Email:", email);
+});
+</script>
 {% schema %}
 {
   "name": "Contact-us Form",
