@@ -316,7 +316,7 @@
             {% render block %}
         {%- endcase -%}
       {%- endfor -%}
-
+ {% if customer %}
       <a href="{{ routes.cart_url }}" class="header__icon header__icon--cart link focus-inset" id="cart-icon-bubble">
         {%- liquid
           if cart == empty
@@ -335,8 +335,25 @@
           </div>
         {%- endif -%}
       </a>
+   {% else %}
+    <button class="login-alert-btn-2"> {% render 'icon-cart-empty' %} </button>
+      {% endif %}
     </div>
   </header>
+  <script>
+  // JavaScript to handle button click
+  document.addEventListener('DOMContentLoaded', function() {
+    var loginAlertBtn2 = document.querySelector('.login-alert-btn-2');
+
+    if (loginAlertBtn2) {
+      loginAlertBtn2.addEventListener('click', function() {
+        alert('Please log in to add to cart');
+        window.location.href = '/account/login';
+        // You can redirect the user to the login page here if needed
+      });
+    }
+  });
+</script>
 </{% if section.settings.sticky_header_type != 'none' %}sticky-header{% else %}div{% endif %}>
 
 {%- if settings.cart_type == "notification" -%}
