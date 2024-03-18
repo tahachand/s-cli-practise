@@ -1,3 +1,33 @@
+<section>
+  {% if customer %}
+  <button class="add-to-cart-btn">Add to Cart</button>
+{% else %}
+  <button class="login-alert-btn">Log In</button>
+{% endif %}
+
+<script>
+  // JavaScript to handle button click
+  document.addEventListener('DOMContentLoaded', function() {
+    var addToCartBtn = document.querySelector('.add-to-cart-btn');
+    var loginAlertBtn = document.querySelector('.login-alert-btn');
+
+    if (addToCartBtn) {
+      addToCartBtn.addEventListener('click', function() {
+        alert('Added to Cart');
+        // Here you can add the logic to actually add the item to the cart
+      });
+    }
+
+    if (loginAlertBtn) {
+      loginAlertBtn.addEventListener('click', function() {
+        alert('Please log in to add to cart');
+        // You can redirect the user to the login page here if needed
+      });
+    }
+  });
+</script>
+
+</section>
 {% schema %}
   {
     "name": "Section name",
