@@ -106,14 +106,23 @@
     {% endform %}
   </div>
 </section>
-  <script>
-    // Get reference to the button element
-     var buttons = document.querySelectorAll('.btn');
+   <script>
+    document.getElementById('contactForm').addEventListener('submit', function(event) {
+      event.preventDefault(); // Prevent the default form submission
 
-    // Add click event listener to the button
-    button.addEventListener('click', function() {
-      // Log data to the console when the button is clicked
-    console.log('Form is submitted')    
+      // Get form data
+      const formData = new FormData(event.target);
+
+      // Convert form data to JSON format
+      const jsonData = {};
+      formData.forEach(function(value, key) {
+        jsonData[key] = value;
+      });
+
+      // Log form data to console
+      console.log(jsonData);
+
+      // You can now send this data to your server using AJAX if needed
     });
   </script>
 {% schema %}
