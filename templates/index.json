@@ -195,6 +195,11 @@
       "disabled": true,
       "settings": {
       }
+    },
+    "contact_us_form_e6PtHm": {
+      "type": "Contact-us-form",
+      "settings": {
+      }
     }
   },
   "order": [
@@ -204,6 +209,7 @@
     "image_collection_XT4cn8",
     "product_image_transition_W4XKwf",
     "slider_section_LFkbpn",
-    "cart_button_Bnh8k3"
+    "cart_button_Bnh8k3",
+    "contact_us_form_e6PtHm"
   ]
 }
