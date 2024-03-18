@@ -192,6 +192,7 @@
     },
     "cart_button_Bnh8k3": {
       "type": "cart-button",
+      "disabled": true,
       "settings": {
       }
     }
