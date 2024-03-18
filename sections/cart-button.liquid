@@ -14,7 +14,7 @@
     if (addToCartBtn) {
       addToCartBtn.addEventListener('click', function() {
         alert('Added to Cart');
-        window.location.href = '/account/login';
+        // window.location.href = '/account/login';
         // Here you can add the logic to actually add the item to the cart
       });
     }
@@ -22,6 +22,7 @@
     if (loginAlertBtn) {
       loginAlertBtn.addEventListener('click', function() {
         alert('Please log in to add to cart');
+        window.location.href = '/account/login';
         // You can redirect the user to the login page here if needed
       });
     }
