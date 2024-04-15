@@ -19,6 +19,7 @@
           "type": "shopify:\/\/apps\/muscled-app\/blocks\/star_rating\/50842f33-44bd-4e3f-bd64-10c75d256d54",
           "settings": {
             "product": "{{product}}",
+            "rating-value": "Rating",
             "colour": "#ffb800"
           }
         },
