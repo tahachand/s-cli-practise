@@ -20,6 +20,7 @@
           "settings": {
             "product": "{{product}}",
             "rating-value": "Rating",
+            "rating-star": "shopify:\/\/shop_images\/Asset_1_4x_01cfd716-bc2c-44eb-b81b-0527805df643.webp",
             "colour": "#ffb800"
           }
         },
