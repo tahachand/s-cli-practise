@@ -10,6 +10,7 @@
     <div class="flex-block-d10" >
       <div class="content-block" >
         <h1>{{ section.settings.sec-title }}</h1>
+        <p>{{ section.settings.content }}</p>
       </div>
       <div class="boxes-block" >
         {% for block in section.blocks limit:4 %}
@@ -32,6 +33,11 @@
         "type": "text",
         "id": "sec-title",
         "label": "Section Title"
+      },
+      {
+        "type": "textarea",
+        "id": "content",
+        "label": "Section content"
       }
     ],
     "blocks": [
