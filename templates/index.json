@@ -196,6 +196,13 @@
       "settings": {
       }
     },
+    "glow_bundle_Xzw4Yi": {
+      "type": "Glow-bundle",
+      "settings": {
+        "sec-title": "Facinated By The Intricacies and Mysteries Of Outer-Space?",
+        "content": ""
+      }
+    },
     "contact_us_form_e6PtHm": {
       "type": "Contact-us-form",
       "settings": {
@@ -228,6 +235,7 @@
     "product_image_transition_W4XKwf",
     "slider_section_LFkbpn",
     "cart_button_Bnh8k3",
+    "glow_bundle_Xzw4Yi",
     "contact_us_form_e6PtHm",
     "custom_liquid_JfkaXe",
     "custom_liquid_47fLNi"
