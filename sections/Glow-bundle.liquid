@@ -36,7 +36,7 @@
     margin-bottom: 20px;
     border: none;
   }
-  .box-image{
+  .box-image-d10{
         background: linear-gradient(to right, #4222de 0%, #659bff 50%, #7ff6e8);
     margin-bottom: 25px;
     border-radius: 50%;
@@ -46,8 +46,9 @@
     align-items: center;
     justify-content: center;
   }
-  .box-image img{
+  .box-image-d10 img{
     width: 100%;
+    max-width: 30px;
   }
 </style>
 <section>
@@ -60,7 +61,7 @@
       <div class="boxes-block" >
         {% for block in section.blocks limit:4 %}
          <div class="box" >
-           <div class="box-image" >
+           <div class="box-image-d10" >
              <img src="{{ block.settings.block-img | img_url: 'master' }} ">
            </div>
            <p>{{ block.settings.block-text }}</p>
