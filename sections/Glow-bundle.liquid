@@ -81,6 +81,7 @@
       <div class="content-block" >
         <h1>{{ section.settings.sec-title }}</h1>
         <p>{{ section.settings.content }}</p>
+        <a href="{{ section.settings.btn-url }}" >{{ section.settings.button-text }}</a>
       </div>
       <div class="boxes-block" >
         {% for block in section.blocks limit:4 %}
