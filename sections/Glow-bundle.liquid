@@ -10,8 +10,9 @@
     <div class="flex-block-d10" >
       <div class="content-block" ></div>
       <div class="boxes-block" >
-        
+        {% for block in section.blocks limit:4 %}
          <div class="box" ></div>
+          {% endfor %}
       </div>
     </div>
   </div>
