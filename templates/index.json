@@ -212,11 +212,19 @@
             "block-img": "shopify:\/\/shop_images\/Trophy_medium_dc24a602-35ae-4c0f-bb84-e806609c7406.png",
             "block-text": "LIGHTNING-FAST 3 DAY DELIVERY"
           }
+        },
+        "text_VQzegk": {
+          "type": "text",
+          "settings": {
+            "block-img": "shopify:\/\/shop_images\/Lock_medium_6fd7d4ba-c9c3-493c-ab0d-459c58c930df.png",
+            "block-text": "90-DAY MONEY BACK"
+          }
         }
       },
       "block_order": [
         "text_p9ewG9",
-        "text_d6PwpE"
+        "text_d6PwpE",
+        "text_VQzegk"
       ],
       "settings": {
         "sec-title": "Facinated By The Intricacies and Mysteries Of Outer-Space?",
