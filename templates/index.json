@@ -219,12 +219,20 @@
             "block-img": "shopify:\/\/shop_images\/Lock_medium_6fd7d4ba-c9c3-493c-ab0d-459c58c930df.png",
             "block-text": "90-DAY MONEY BACK"
           }
+        },
+        "text_EKdkCP": {
+          "type": "text",
+          "settings": {
+            "block-img": "shopify:\/\/shop_images\/Eye_medium_02234a8d-bd06-425a-8314-1e7b1cdda3ac.png",
+            "block-text": "MUSIC SYNCRONIZATION"
+          }
         }
       },
       "block_order": [
         "text_p9ewG9",
         "text_d6PwpE",
-        "text_VQzegk"
+        "text_VQzegk",
+        "text_EKdkCP"
       ],
       "settings": {
         "sec-title": "Facinated By The Intricacies and Mysteries Of Outer-Space?",
