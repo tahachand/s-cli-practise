@@ -205,10 +205,18 @@
             "block-img": "shopify:\/\/shop_images\/Flag_medium_2a6784ee-d211-4206-854f-34dc471144b2.png",
             "block-text": "SIMPLE CUSTOMIZATION"
           }
+        },
+        "text_d6PwpE": {
+          "type": "text",
+          "settings": {
+            "block-img": "shopify:\/\/shop_images\/Trophy_medium_dc24a602-35ae-4c0f-bb84-e806609c7406.png",
+            "block-text": "LIGHTNING-FAST 3 DAY DELIVERY"
+          }
         }
       },
       "block_order": [
-        "text_p9ewG9"
+        "text_p9ewG9",
+        "text_d6PwpE"
       ],
       "settings": {
         "sec-title": "Facinated By The Intricacies and Mysteries Of Outer-Space?",
