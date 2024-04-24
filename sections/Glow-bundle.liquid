@@ -8,7 +8,9 @@
 <section>
   <div class="main-block-d10" >
     <div class="flex-block-d10" >
-      <div class="content-block" ></div>
+      <div class="content-block" >
+        <h1>{{ section.settings.sec-title }}</h1>
+      </div>
       <div class="boxes-block" >
         {% for block in section.blocks limit:4 %}
          <div class="box" >
@@ -26,6 +28,11 @@
   {
     "name": "Glow Bundle",
     "settings": [
+      {
+        "type": "text",
+        "id": "sec-title",
+        "label": "Section Title"
+      }
     ],
     "blocks": [
       {
