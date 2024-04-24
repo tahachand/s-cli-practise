@@ -198,6 +198,18 @@
     },
     "glow_bundle_Xzw4Yi": {
       "type": "Glow-bundle",
+      "blocks": {
+        "text_p9ewG9": {
+          "type": "text",
+          "settings": {
+            "block-img": "shopify:\/\/shop_images\/Flag_medium_2a6784ee-d211-4206-854f-34dc471144b2.png",
+            "block-text": "SIMPLE CUSTOMIZATION"
+          }
+        }
+      },
+      "block_order": [
+        "text_p9ewG9"
+      ],
       "settings": {
         "sec-title": "Facinated By The Intricacies and Mysteries Of Outer-Space?",
         "content": "Our best-selling space lamps feature meticulous craftsmanship using actual high-resolution NASA satellite imagery to produce device. Pair it with some peaceful music, kick off your shoes, and feel the stress of the day melt away. Facinated By The Intricacies and Mysteries Of Outer-Space - Get this lamp now."
